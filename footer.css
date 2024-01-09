@@ -1,0 +1,161 @@
+
+.footer-hr {
+    width: 100%;
+    border: none;
+    height: 1px; 
+    background-color: #333; 
+  }
+  
+  .useful-links{
+    
+    border-bottom: 1px dotted #000; 
+    display: inline-block; 
+    font-weight: 600;
+
+  }
+  
+  .opening-hours{
+    text-align: center;
+    font-weight: 600;
+
+    border-bottom: 1px dotted #000; 
+    display: inline-block; /* Ensures the border is only as wide as the text */
+  }
+  .weekdays{
+    text-align: center;
+    padding-bottom: 0em;
+    font-weight: 600;
+
+  }
+  .table{
+    text-align: center;
+    font-weight: 600;
+
+  }
+  
+  /* .my-custom-style{
+    padding-bottom: 0em;
+  } */
+  /* td {
+    border: 1px solid ;
+    padding: 8px;
+    text-align: center;
+    width: 150px;
+        height: 50px;
+  } */
+  
+  .footer-logo {
+    border-radius: 45px;
+    width: 55%;
+    /* border: 2px solid black;
+    border-bottom-width: 4px;
+    border-right-width: 4px; */
+  }
+  
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    align-items: center;
+    margin-top: 0%; 
+  }
+  .custom-icon {
+    width: 21px;
+    height: 36px;
+    margin: 0px 10px;
+  }
+  .map-logo {
+    width: 24px;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4375em;
+  }
+  .reach-us {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    margin-right: 0.375em;
+  }
+  
+  .fb-icon {
+    color: #1877f2; /* Facebook blue color */
+  }
+  .fb-icon:hover {
+    transform: scale(1.2); /* Scale the icon on hover (adjust as needed) */
+  }
+  .wa-icon {
+    color: #25d366; /* WhatsApp green color */
+  }
+  .wa-icon:hover {
+    transform: scale(1.2); /* Scale the icon on hover (adjust as needed) */
+    color: #17ad4e;
+  }
+  .insta-icon {
+    color: #d34da9; /* Instagram pink color */
+  }
+  .insta-icon:hover {
+    color: #bc2a8d;
+    transform: scale(1.2); /* Scale the icon on hover (adjust as needed) */
+  }
+  .gmap-icon:hover {
+    transform: scale(1.2); /* Scale the icon on hover (adjust as needed) */
+  }
+  
+  .icon-link {
+    display: inline-block;
+    margin: 0 10px; /* Adjust as needed */
+    /* color: #4f4f4f; */
+    font-size: 24px; /* Adjust as needed */
+  }
+  
+  
+  
+  
+  .back-to-top {
+    /* display: none; */
+    
+    /* top: 0vh;
+    position: relative;
+    left: 136vh; */
+  
+    bottom: 30px;
+    right: 20px;
+    background-color: #a48a6c;
+    color:black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: absolute;
+    right: 5%;
+  }
+  
+  .back-to-top:hover {
+    background-color: #92785A;
+    color: black;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width:991px){
+    .col-lg-6{
+      text-align: center;
+    }
+    .back-to-top{
+      bottom: 125%;
+     right: 35%;
+    }
+  }
+
+  @media (max-width:991px) and (min-width: 768px){
+    
+  }
+
+  .table td{
+    border-top: 1px solid #a78663;
+    }
+    .hehe{
+      font-weight: 600;
+
+    }

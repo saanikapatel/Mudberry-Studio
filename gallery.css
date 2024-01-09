@@ -1,0 +1,238 @@
+ .heading{
+    width: 86%;
+    margin: auto;
+    font-size: 5vw;
+    /* padding-top: 2vw; */
+    text-align: center;
+    font-family: myfont;
+}
+@font-face {
+    font-family: myfont;
+    src: url('photos/Hanged Letters.ttf');
+}
+
+
+
+.container-gallery{
+    /* width: 100%; */
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #5f493cfa;
+    width: 86%;
+    margin: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    width: 86%;
+  box-shadow: rgba(0 0 0) 2px 2px 23px 2px;
+  border-radius: 0.3vw;
+    
+    
+
+}
+
+.gallery{
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+	grid-auto-flow: dense;
+    width: 100%;
+    margin: auto;
+   
+    
+	
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+	border: 0.15vw solid black;
+    border-radius: 0.8vw;
+    
+    
+}
+
+#main{
+    border-radius: 0.5vw;
+    background-color: rgb(104, 146, 153,0.8);
+    border-radius: 0.8vw;
+    border: 2px solid black;
+    
+    margin: auto;
+    margin-top: 5vw;
+    width: 86%;
+    margin-bottom: 5vw;
+
+    
+}
+
+.horizontal {
+	grid-column: span 2;
+}
+
+.vertical {
+	grid-row: span 2;
+}
+
+.big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+@media only screen and (max-width: 768px) {
+   .gallery{
+    grid-template-columns: 1fr;
+   }
+
+   .heading{
+    font-size: 7vw;
+   }
+}
+
+
+
+
+/* .overflow-hidden {
+ overflow: hidden;
+}
+
+.drop-in{
+ animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2{
+ animation: drop-in 1200ms ease 500ms backwards;
+}
+.drop-in-3{
+ animation: drop-in 1200ms ease 500ms backwards;
+}
+
+@keyframes drop-in {
+ from {
+  opacity: 0;
+  transform: translateY(-100px);
+ }
+ to {
+  opacity: 1;
+  transform: translate(0px);
+ }
+} */
+
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 2s ease-in;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.nav_list a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.nav_list a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav_list a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
+
+
+
+
+.overflow-hidden {
+ overflow: hidden;
+}
+
+.drop-in {
+ animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2 {
+ animation: drop-in 1200ms ease 500ms backwards;
+}
+
+.drop-in-3 {
+ animation: drop-in 3600ms ease 900ms backwards;
+}
+@keyframes drop-in {
+ from {
+  opacity: 0;
+  transform: translateY(-100px);
+ }
+ to {
+  opacity: 1;
+  transform: translate(0px);
+ }
+}
